@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import MovieCard from './MovieCard';
 import Movies from './Movie';
+import Header from './Header';
 
 const MovieList = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     return (
         <>
+
+        
         <div className='Search d-flex justify-content-center mt-5'>
+        <Header />
             <input 
                 type='text' 
                 placeholder='Search for a movie...' 
